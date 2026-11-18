@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informační technologie na SOŠ a SOU Neratovice</title>
+<meta name="description" content="Studentský projekt – neoficiální webová prezentace oboru Informační technologie (18-20-M/01) na SOŠ a SOU Neratovice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="top">
+  <a class="brand" href="#uvod"><img class="logo" src="img/logo.png" alt="Logo SOŠ a SOU Neratovice">IT Neratovice</a></span>IT Neratovice</a>
+  <button class="burger" aria-label="Otevřít menu" aria-expanded="false">☰</button>
+  <nav id="menu" aria-label="Hlavní navigace">
+    <a href="#uvod">Úvod</a>
+    <a href="#nauci-se">Co se naučíš</a>
+    <a href="#tvorba">Ukázky tvorby</a>
+    <a href="#uplatneni">Uplatnění</a>
+    <a href="#kviz">Kvíz</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<main id="obsah">
+<section id="uvod" class="hero">
+  <div class="hero-text">
+    <h1>Informační technologie. Čtyři roky, po kterých se nebudeš bát žádného kabelu ani kódu.</h1>
+    <p>Maturitní obor 18-20-M/01 na SOŠ a SOU Neratovice: programování, počítačové sítě, operační systémy a hardware v jednom studiu.</p>
+    <div class="cta-row">
+      <a class="btn" href="#kviz">Zkus kvíz: Jaká IT role ti sedí?</a>
+      <a class="btn ghost" href="#kontakt">Chci studovat</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <img src="https://www.sosasou.cz/images/2022/obor-informatika-small-large.jpg" alt="Žáci oboru Informační technologie při práci s počítači" onerror="this.style.display='none'">
+    <div class="terminal" aria-label="Ukázka příkazové řádky" id="term"><span class="prompt">$</span> <span id="typed"></span><span class="cursor">▌</span></div>
+  </div>
+</section>
+
+<section id="nauci-se">
+  <h2>Co se na oboru naučíš</h2>
+  <p class="lead">Vyber si oblast a uvidíš, co v ní zvládneš.</p>
+  <div class="tabs" role="tablist" aria-label="Oblasti studia">
+    <button role="tab" aria-selected="true" data-tab="p">Programování</button>
+    <button role="tab" aria-selected="false" data-tab="s">Sítě</button>
+    <button role="tab" aria-selected="false" data-tab="o">Systémy</button>
+    <button role="tab" aria-selected="false" data-tab="h">Hardware</button>
+  </div>
+  <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+</section>
+
+<section id="tvorba" class="alt">
+  <h2>Ukázky studentské tvorby</h2>
+  <p class="lead">Soutěže, praktika, praxe i 3D tisk. Tohle všechno tě na oboru čeká.</p>
+  <div class="grid">
+    <article class="card">
+      <figure class="ph"><img src="img/haxagon.jpg" alt="Soutěž Haxagon – ukázka z aktivit žáků oboru IT" loading="lazy" onerror="this.parentNode.classList.add('empty')"><span class="ph-fallback" aria-hidden="true">🏆</span></figure>
+      <h3>Soutěž Haxagon</h3>
+      <p>Týmová soutěž v kyberbezpečnosti. Luštíš úlohy, hledáš chyby v systémech a poměřuješ síly se školami z celé republiky.</p>
+      <span class="tag">Soutěže</span>
+    </article>
+    <article class="card">
+      <figure class="ph"><img src="img/troubleshoot.jpg" alt="Troubleshoot Day – ukázka z aktivit žáků oboru IT" loading="lazy" onerror="this.parentNode.classList.add('empty')"><span class="ph-fallback" aria-hidden="true">🛠️</span></figure>
+      <h3>Troubleshoot Day</h3>
+      <p>Na čas hledáš a opravuješ závady v počítačové síti. Přesně to, co potřebuje každý správce sítí.</p>
+      <span class="tag">Soutěže</span>
+    </article>
+    <article class="card">
+      <figure class="ph"><img src="img/site.jpg" alt="Počítačové sítě – ukázka z aktivit žáků oboru IT" loading="lazy" onerror="this.parentNode.classList.add('empty')"><span class="ph-fallback" aria-hidden="true">🌐</span></figure>
+      <h3>Počítačové sítě</h3>
+      <p>Zapojuješ switche a routery, nastavuješ adresy a zkoušíš, jak se zprávy dostanou z jednoho počítače na druhý a můžeš získati cisco certifikaci.</p>
+      <span class="tag">Sítě</span>
+    </article>
+  </div>
+  <p class="note">Další fotky a novinky ze života školy najdeš na <a href="https://www.facebook.com/profile.php?id=100029397194978" target="_blank" rel="noopener">Facebooku</a>, <a href="https://www.instagram.com/sosasou.neratovice/" target="_blank" rel="noopener">Instagramu</a> a <a href="https://sosasouneratovice.rajce.idnes.cz/" target="_blank" rel="noopener">Rajčeti</a> školy.</p>
+</section>
+
+<section id="uplatneni">
+  <h2>Kde najdeš uplatnění</h2>
+  <p class="lead">Absolvent se uplatní jako:</p>
+  <ul class="roles">
+    <li>správce počítačových sítí</li><li>správce operačních systémů</li><li>programátor</li>
+    <li>technik IT</li><li>pracovník uživatelské podpory</li><li>školicí technik</li>
+    <li>obchodník s prostředky IT</li><li>systémový správce</li>
+  </ul>
+  <p>A pokud chceš pokračovat dál, maturita ti otevírá cestu na vysokou školu.</p>
+</section>
+
+<section id="kviz" class="alt">
+  <h2>Jaká IT role ti sedí?</h2>
+  <div id="quiz" class="quiz"></div>
+</section>
+
+<section id="kontakt">
+  <h2>Zájem o studium a kontakt</h2>
+  <div class="contact">
+    <div>
+      <p><strong>SOŠ a SOU Neratovice</strong><br>Spojovací 664, Neratovice</p>
+      <p>Telefon: <a href="tel:+420313100700">+420 313 100 700</a><br>E-mail: <a href="mailto:sekretariat@sosasou.cz">sekretariat@sosasou.cz</a></p>
+      <p><a class="btn" href="https://www.sosasou.cz/index.php/uchazeci-cs/uchazeci-prijimaci-rizeni" target="_blank" rel="noopener">Přijímací řízení</a>
+      <a class="btn ghost" href="https://www.sosasou.cz/index.php/informacni-technologie-site" target="_blank" rel="noopener">Oficiální stránka oboru</a></p>
+    </div>
+    <ol class="steps">
+      <li>Prohlédni si školu na <a href="https://www.sosasou.cz/index.php/component/content/article/dny-otevrenych-dveri-3?catid=20&amp;Itemid=380" target="_blank" rel="noopener">Dny otevřených dveří</a>.</li>
+      <li>Podej přihlášku podle pokynů školy.</li>
+      <li>Připrav se na přijímací řízení.</li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><strong>Studentský projekt – neoficiální webová prezentace.</strong> Nejde o oficiální stránky školy.</p>
+  <p>Zdroje informací: <a href="https://www.sosasou.cz" target="_blank" rel="noopener">sosasou.cz</a>. Fotografie: sociální sítě školy a obrázky vytvořené pomocí AI. Tvorba webu: vlastní práce s využitím AI (Claude) jako pomocníka.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
